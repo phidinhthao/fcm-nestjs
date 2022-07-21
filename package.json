@@ -1,0 +1,78 @@
+{
+  "name": "@phoenix/fcm-nestjs",
+  "version": "0.4.0",
+  "description": "NestJS npm package starter",
+  "author": "Phi Dinh Thao <thaopdvn@gmail.com>",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "files": [
+    "dist/**/*",
+    "*.md"
+  ],
+  "scripts": {
+    "start:dev": "tsc -w",
+    "build": "tsc",
+    "prepare": "npm run build",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "lint": "tslint -p tsconfig.json -c tslint.json",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:cov": "jest --coverage",
+    "test:e2e": "jest --config ./test/jest-e2e.json"
+  },
+  "keywords": [
+    "nestjs"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/phidinhthao/fcm-nestjs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/phidinhthao/fcm-nestjs"
+  },
+  "peerDependencies": {
+    "@nestjs/common": "^8.0.6"
+  },
+  "dependencies": {
+    "firebase-admin": "^9.5.0",
+    "reflect-metadata": "^0.1.13",
+    "rxjs": "^7.3.0"
+  },
+  "devDependencies": {
+    "@nestjs/common": "8.0.6",
+    "@nestjs/core": "^8.0.6",
+    "@nestjs/platform-express": "^8.0.6",
+    "@nestjs/testing": "8.0.6",
+    "@types/express": "4.17.13",
+    "@types/jest": "27.0.2",
+    "@types/node": "16.9.4",
+    "@types/supertest": "2.0.11",
+    "jest": "27.2.1",
+    "prettier": "2.4.1",
+    "supertest": "6.1.6",
+    "ts-jest": "^27.0.5",
+    "ts-node": "10.2.1",
+    "tsc-watch": "4.5.0",
+    "tsconfig-paths": "3.11.0",
+    "tslint": "6.1.3",
+    "typescript": "^4.4.3"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "ts"
+    ],
+    "rootDir": "src",
+    "testRegex": ".spec.ts$",
+    "transform": {
+      "^.+\\.(t|j)s$": "ts-jest"
+    },
+    "coverageDirectory": "../coverage",
+    "testEnvironment": "node"
+  },
+  "homepage": "https://github.com/phidinhthao/fcm-nestjs#readme"
+}
